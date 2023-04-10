@@ -1068,6 +1068,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5455183688076362165, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5515477743192986677, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1080,6 +1084,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0.55626976
       objectReference: {fileID: 0}
+    - target: {fileID: 5651675645301926717, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 470b0c582c207f748a829e815bfe9a72, type: 2}
     - target: {fileID: 5787404330118570037, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: namaBab
       value: Nabi Adam
@@ -1316,6 +1324,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 7859602621213089896, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 8233926044155431232, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: namaBab
       value: Basmallah&Hamdalah
@@ -1375,7 +1387,7 @@ PrefabInstance:
     - target: {fileID: 8925777638916842891, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 049ea607cae4a8f469280004e7aadcac, type: 3}
+      objectReference: {fileID: 21300000, guid: 7f9309d6bebadd1499087ba71158c0a0, type: 3}
     - target: {fileID: 8925777638916842891, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
