@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using TMPro;
 
 [Serializable]
 public struct Bab
@@ -20,7 +21,7 @@ public class GameplaySpellingBee : MonoBehaviour
 
     public List<Bab> babList;
 
-    public Text bateraiText;
+    public TextMeshProUGUI bateraiText;
     public GameObject bateraiUI1, bateraiUI2;
     public GameObject benarUI;
     public GameObject starSpray;

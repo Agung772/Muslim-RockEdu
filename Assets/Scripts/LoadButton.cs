@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class LoadButton : MonoBehaviour
         dataProfil, 
         slotKosong;
 
-    public Text 
+    public TextMeshProUGUI
         namaPlayer, 
         kelas,
         totalBintang,

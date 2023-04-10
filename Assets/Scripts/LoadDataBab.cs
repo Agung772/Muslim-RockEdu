@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,7 @@ public class LoadDataBab : MonoBehaviour
 {
     public int bab;
     public string namaBab;
-    public Text totalBintangText, namaBabText;
+    public TextMeshProUGUI totalBintangText, namaBabText;
     public Text cTDText, sBText, pGText, BSText;
 
     public Image bintangImage;
