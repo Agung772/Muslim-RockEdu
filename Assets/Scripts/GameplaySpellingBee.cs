@@ -25,7 +25,7 @@ public class GameplaySpellingBee : MonoBehaviour
     public GameObject bateraiUI1, bateraiUI2;
     public GameObject benarUI;
     public GameObject starSpray;
-    public Animator transisiNextSB;
+    public Animator transisiNextSB_Benar;
 
     public SlotHurufController[] slotHurufController;
     public HurufController[] hurufController;
@@ -223,7 +223,7 @@ public class GameplaySpellingBee : MonoBehaviour
         {
             if (urutanSoal != babList[bab].soal.Length - 1)
             {
-                transisiNextSB.SetTrigger("Benar");
+                transisiNextSB_Benar.SetTrigger("Benar");
                 yield return new WaitForSeconds(1);
                 AudioManager.instance.SfxBenarSB();
                 NextSoal(bab);
