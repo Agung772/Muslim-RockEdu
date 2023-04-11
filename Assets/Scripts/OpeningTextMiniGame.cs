@@ -12,6 +12,8 @@ public class OpeningTextMiniGame : MonoBehaviour
 
     public GameObject loadingPG;
     public GameObject bgOpening;
+    public GameObject buttonGameplayPG;
+    public GameObject buletUISB;
 
     public Animator screenCTD;
     public Animator openingBS;
@@ -31,6 +33,7 @@ public class OpeningTextMiniGame : MonoBehaviour
             StartCoroutine(Coroutine());
             IEnumerator Coroutine()
             {
+                buttonGameplayPG.SetActive(false);
                 loadingPG.SetActive(true);
                 yield return new WaitForSeconds(5);
                 loadingPG.SetActive(false);
@@ -104,6 +107,7 @@ public class OpeningTextMiniGame : MonoBehaviour
                     AnimasiManager.instance.AnimasiScreenCTD(false);
                 }
                 gameObject.SetActive(false);
+                buttonGameplayPG.SetActive(true);
                 GameplayPilihanGanda.instance.StartAwalPG();
             }
             else if (miniGame == "BS")
@@ -145,7 +149,8 @@ public class OpeningTextMiniGame : MonoBehaviour
                 IEnumerator Coroutine()
                 {
                     openingSB.SetTrigger("Exit");
-                    yield return new WaitForSeconds(5.5f);
+                    buletUISB.SetActive(true);
+                    yield return new WaitForSeconds(5f);
                     gameObject.SetActive(false);
 
                 }
