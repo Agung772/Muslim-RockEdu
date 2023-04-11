@@ -105,6 +105,7 @@ public class GameplaySpellingBee : MonoBehaviour
                 slotHurufController = FindObjectsOfType<SlotHurufController>();
                 hurufController = FindObjectsOfType<HurufController>();
             }
+            starSpray.gameObject.SetActive(false);
         }
 
  
