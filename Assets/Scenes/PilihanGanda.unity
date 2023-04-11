@@ -334,6 +334,14 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2422928744129634059, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422928745015321236, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2513675920759075491, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -57
@@ -566,6 +574,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7024423365462672131, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7024423365462672131, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12
+      objectReference: {fileID: 0}
     - target: {fileID: 7048994786874665544, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -727,11 +743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91367e8483a8a2b409c7e4ac2123c5fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &268023800 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2422928744129634053, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-  m_PrefabInstance: {fileID: 268023798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &635855550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -887,6 +898,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4226954238681795359, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
   m_PrefabInstance: {fileID: 268023798}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1130804393 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9161550372464921633, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1131906742
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +937,7 @@ MonoBehaviour:
   benar: 0
   salah: 0
   pilihanGandaPrefab: {fileID: 1957271418741897191, guid: cea5edb9a0da650488ac06d27b694a1a, type: 3}
-  transisiNext: {fileID: 268023800}
+  transisiNext: {fileID: 1130804393}
   spawnSoal: {fileID: 860985803}
   unSpawnSoal: {fileID: 0}
   bGAnimasi: {fileID: 1342941850}
