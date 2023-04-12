@@ -10,7 +10,7 @@ public class LoadDataBab : MonoBehaviour
     public string namaBab;
     public TextMeshProUGUI totalBintangText, namaBabText;
     public Text cTDText, sBText, pGText, BSText;
-
+    public Button roketButton;
     public Image bintangImage;
     public Sprite[] bintangSprite;
 
@@ -51,5 +51,29 @@ public class LoadDataBab : MonoBehaviour
         {
             bintangImage.sprite = bintangSprite[0];
         }
+
+
+        //Unlock level
+        if (bab > 1)
+        {
+            int cTDMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreConnectingTheDot + (bab - 1) + SaveManager.instance.GameSave.codeSave);
+            int sBMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreSpellingBee + (bab - 1) + SaveManager.instance.GameSave.codeSave);
+            int pGMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScorePilihanGanda + (bab - 1) + SaveManager.instance.GameSave.codeSave);
+            int bSMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreBenarSalah + (bab - 1) + SaveManager.instance.GameSave.codeSave);
+
+            int totalBintangMin1 = cTDMin1 + sBMin1 + pGMin1 + bSMin1;
+
+
+            if (totalBintangMin1 >= 8)
+            {
+                roketButton.interactable = true;
+            }
+            else
+            {
+                roketButton.interactable = false;
+            }
+        }
+
+
     }
 }

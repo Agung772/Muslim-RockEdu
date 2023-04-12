@@ -101,6 +101,8 @@ public class GameSave : MonoBehaviour
         {
             PlayerPrefs.SetInt(namaMiniGame + bab + codeSave, score);
 
+            PlayerPrefs.SetString(_WaktuSave + codeSave, System.DateTime.Now.ToString());
+
             LoadGameData();
         }
     }

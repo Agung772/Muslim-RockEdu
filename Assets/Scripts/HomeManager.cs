@@ -114,6 +114,11 @@ public class HomeManager : MonoBehaviour
                 loadButtonContent.transform.GetChild(i).GetComponent<LoadButton>().LoadTextUI();
             }
 
+            for (int i = 0; i < loadBabContent.transform.childCount; i++)
+            {
+                loadBabContent.transform.GetChild(i).GetComponent<LoadDataBab>().LoadBabText();
+            }
+
 
         }
 

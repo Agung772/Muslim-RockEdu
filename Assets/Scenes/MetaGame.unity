@@ -1034,6 +1034,7 @@ MonoBehaviour:
   buletUnfixed: {fileID: 707517967}
   point: {fileID: 532754666}
   textCanva: {fileID: 2102615473}
+  audioZone: {fileID: 321312119}
 --- !u!1001 &113748253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2409,6 +2410,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c984c7f23b9956e42a712ac70bb35693, type: 3}
   m_PrefabInstance: {fileID: 264983591}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &265824172 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3847265102897204850, guid: f957b4d0d5c11884f91bf79ba6f89457, type: 3}
+  m_PrefabInstance: {fileID: 155404632}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &268197143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2988,6 +2994,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4d035e49445ea4346816f6ed7d61c77e, type: 3}
   m_PrefabInstance: {fileID: 320874720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &321312119 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3847265102897204850, guid: f957b4d0d5c11884f91bf79ba6f89457, type: 3}
+  m_PrefabInstance: {fileID: 3847265103396129842}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &326207600
 GameObject:
@@ -16712,6 +16723,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 36c2a4d62c20b624f810cf989690ac9c, type: 3}
   m_PrefabInstance: {fileID: 1047841962}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1058668315 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3847265102897204850, guid: f957b4d0d5c11884f91bf79ba6f89457, type: 3}
+  m_PrefabInstance: {fileID: 1970574329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1067019595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17260,6 +17276,7 @@ MonoBehaviour:
   buletUnfixed: {fileID: 141241782}
   point: {fileID: 326207601}
   textCanva: {fileID: 301793436}
+  audioZone: {fileID: 1058668315}
 --- !u!1001 &1131503043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22501,6 +22518,7 @@ MonoBehaviour:
   buletUnfixed: {fileID: 1708952180}
   point: {fileID: 386609838}
   textCanva: {fileID: 1274762531}
+  audioZone: {fileID: 2065127852}
 --- !u!1001 &1789619190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23170,6 +23188,7 @@ MonoBehaviour:
   buletUnfixed: {fileID: 1811999045}
   point: {fileID: 1269457914}
   textCanva: {fileID: 1359457025}
+  audioZone: {fileID: 265824172}
 --- !u!1001 &1855559073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25628,6 +25647,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 185ea405a84cea549ae5c62cad2c7ca0, type: 3}
   m_PrefabInstance: {fileID: 2063700747}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2065127852 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3847265102897204850, guid: f957b4d0d5c11884f91bf79ba6f89457, type: 3}
+  m_PrefabInstance: {fileID: 614174045}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2078904753
 GameObject:

@@ -26,6 +26,7 @@ public class MiniGame : MonoBehaviour
     public Transform point;
 
     public GameObject textCanva;
+    public AudioSource audioZone;
     Transform player;
 
     private void Start()
@@ -52,6 +53,8 @@ public class MiniGame : MonoBehaviour
             minigameUnfixed.SetActive(false);
             buletFixed.SetActive(true);
             buletUnfixed.SetActive(false);
+
+            audioZone.Play();
         }
         else
         {

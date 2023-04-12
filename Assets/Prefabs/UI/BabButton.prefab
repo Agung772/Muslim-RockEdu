@@ -738,6 +738,7 @@ MonoBehaviour:
   sBText: {fileID: 6943863641397461509}
   pGText: {fileID: 4590795028432370898}
   BSText: {fileID: 2440040249838644352}
+  roketButton: {fileID: 3434477147099103650}
   bintangImage: {fileID: 8797126971535632279}
   bintangSprite:
   - {fileID: 21300000, guid: ec8c62d69667bc34aa3e7675bc3f9c76, type: 3}
