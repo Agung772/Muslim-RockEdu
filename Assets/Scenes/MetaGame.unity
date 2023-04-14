@@ -23138,7 +23138,6 @@ MonoBehaviour:
   cewek: {fileID: 1989912140}
   animatorKarakter: {fileID: 1200002076}
   displayRute: {fileID: 1248278708}
-  destinationAnimasi: {fileID: 7857836952546358357, guid: 27f9f123344c65b479a67591738ab977, type: 3}
   _Idle: Idle
   _Walk: Walk
   _Tegak: Tegak
@@ -34485,6 +34484,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8559935239873219822, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140803342523838382, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
