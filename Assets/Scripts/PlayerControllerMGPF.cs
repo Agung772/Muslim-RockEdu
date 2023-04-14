@@ -18,7 +18,6 @@ public class PlayerControllerMGPF : MonoBehaviour
     public AnimatorKarakter animatorKarakter;
 
     public LineRenderer displayRute;
-    public Animator destinationAnimasi;
 
 
 
@@ -126,7 +125,6 @@ public class PlayerControllerMGPF : MonoBehaviour
     void SpawndDestination()
     {
         Instantiate(destinationPrefab, hit.point + new Vector3(0, 0, 0), Quaternion.identity);
-        destinationAnimasi.SetTrigger("Click");
         
     }
     void DestroyDestination()
