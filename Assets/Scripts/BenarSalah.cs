@@ -21,7 +21,7 @@ public class BenarSalah : MonoBehaviour
         benarImage.GetComponent<Button>().interactable = false;
         salahImage.GetComponent<Button>().interactable = false;
 
-        totalPertanyaanText.text = GameplayBenarSalah.instance.urutanPertanyaan + "/" + 5;
+        totalPertanyaanText.text = GameplayBenarSalah.instance.urutanPertanyaan + "/" + GameplayBenarSalah.instance.jumlahSoal;
 
         yield return new WaitForSeconds(1.5f);
 

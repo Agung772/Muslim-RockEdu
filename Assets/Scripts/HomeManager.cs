@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HomeManager : MonoBehaviour
 {
+    public static HomeManager instance;
+
     public string namaPlayer;
     public string karakter;
     public string kelas;
@@ -22,6 +24,10 @@ public class HomeManager : MonoBehaviour
     public InputField kelasInputField;
     public Dropdown karakterDropdown;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     public void HomeButton(string namaButton)
     {
         homeButton.SetActive(false);

@@ -47,7 +47,20 @@ public class ButtonManager : MonoBehaviour
             cowokUI.SetActive(false);
             cewekUI.SetActive(true);
         }
+
+        //---------************************88888
+        if (PlayerPrefs.GetInt("PemilihanBabUI") == 1)
+        {
+            HomeManager.instance.HomeButton("PilihBab");
+            PlayerPrefs.SetInt("PemilihanBabUI", 0);
+        }
     }
+    public void PemilihanBabUI()
+    {
+        PindahScene("Home");
+        PlayerPrefs.SetInt("PemilihanBabUI", 1);
+    }
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Delete))
@@ -100,6 +113,8 @@ public class ButtonManager : MonoBehaviour
         }
 
     }
+
+
 
     public Button nextPertanyaanPG;
     public bool nextPertanyaanPilihanGanda;
