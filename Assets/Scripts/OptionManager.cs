@@ -21,12 +21,15 @@ public class OptionManager : MonoBehaviour
         optionUI.SetActive(false);
         restart = true;
 
+        AudioManager.instance.SfxClickBS();
     }
     public void QuitUI()
     {
         quitUI.SetActive(true);
         optionUI.SetActive(false);
         quit = true;
+
+        AudioManager.instance.SfxClickBS();
     }
     public void No()
     {
@@ -35,12 +38,16 @@ public class OptionManager : MonoBehaviour
             restartUI.SetActive(false);
             optionUI.SetActive(true);
             restart = false;
+
+            AudioManager.instance.SfxClickBS();
         }
         if(quit == true)
         {
             quitUI.SetActive(false);
             optionUI.SetActive(true);
             quit = false;
+
+            AudioManager.instance.SfxClickBS();
         }
 
     }

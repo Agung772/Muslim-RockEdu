@@ -20,7 +20,6 @@ public class LoadButton : MonoBehaviour
         totalBintang,
         waktuSave;
 
-    public Button button;
     public DeleteSaveUI deleteSaveUI;
 
     private void Start()
@@ -38,11 +37,11 @@ public class LoadButton : MonoBehaviour
             {
                 LoadText(0);
 
-                button.interactable = true;
+
             }
             else
             {
-                button.interactable = false;
+
                 dataProfil.SetActive(false);
                 slotKosong.SetActive(true);
             }
@@ -54,11 +53,11 @@ public class LoadButton : MonoBehaviour
             {
                 LoadText(1);
 
-                button.interactable = true;
+
             }
             else
             {
-                button.interactable = false;
+
                 dataProfil.SetActive(false);
                 slotKosong.SetActive(true);
             }
@@ -69,11 +68,11 @@ public class LoadButton : MonoBehaviour
             {
                 LoadText(2);
 
-                button.interactable = true;
+
             }
             else
             {
-                button.interactable = false;
+
                 dataProfil.SetActive(false);
                 slotKosong.SetActive(true);
             }
@@ -84,11 +83,11 @@ public class LoadButton : MonoBehaviour
             {
                 LoadText(3);
 
-                button.interactable = true;
+ 
             }
             else
             {
-                button.interactable = false;
+
                 dataProfil.SetActive(false);
                 slotKosong.SetActive(true);
             }
@@ -130,6 +129,8 @@ public class LoadButton : MonoBehaviour
         waktuSave.text = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().waktuSave;
         nama = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().namaPlayer;
 
+
+
     }
 
     public void DeleteSave()
@@ -139,6 +140,7 @@ public class LoadButton : MonoBehaviour
         deleteSaveUI.loadButton = this;
 
         //transform.parent.GetComponent<UrutkanLoadButton>().UrutkanLoad();
+        AudioManager.instance.SfxClickBS();
     }
 
 }

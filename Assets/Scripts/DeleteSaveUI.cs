@@ -15,10 +15,14 @@ public class DeleteSaveUI : MonoBehaviour
         loadButton.LoadTextUI();
         loadButton.nama = "";
         gameObject.SetActive(false);
+
+        AudioManager.instance.SfxClickBS();
     }
 
     public void NoButton()
     {
         gameObject.SetActive(false);
+
+        AudioManager.instance.SfxClickBS();
     }
 }

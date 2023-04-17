@@ -10,6 +10,9 @@ public class SaveManager : MonoBehaviour
 
     public GameSave GameSave;
 
+    [HideInInspector]
+    public bool PemilihanBabUI;
+
     private void Awake()
     {
         if (SaveManager.instance == null)

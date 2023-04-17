@@ -16,6 +16,7 @@ public class SlotHurufController : MonoBehaviour
         if (!slotHurufAktif)
         {
             Destroy(GetComponent<SlotHurufController>());
+            transform.GetChild(1).GetComponent<SpriteRenderer>().color = Color.green;
         }
     }
 
@@ -23,6 +24,7 @@ public class SlotHurufController : MonoBehaviour
     {
         if (other.GetComponent<HurufController>())
         {
+
             if (codeSlotHuruf == other.GetComponent<HurufController>().codeHuruf && !use && !other.GetComponent<HurufController>().click && !other.GetComponent<HurufController>().use)
             {
                 clear = true;
@@ -40,8 +42,12 @@ public class SlotHurufController : MonoBehaviour
                 
                 codeHuruf = other.GetComponent<HurufController>().codeHuruf;
                 GameplaySpellingBee.instance.CheckHuruf();
+
+                transform.GetChild(1).GetComponent<SpriteRenderer>().color = Color.green;
             }
         }
+
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -49,6 +55,7 @@ public class SlotHurufController : MonoBehaviour
 
         if (other.GetComponent<HurufController>().codeHuruf == codeHuruf)
         {
+
             clear = false;
             use = false;
             codeHuruf = null;
@@ -60,7 +67,9 @@ public class SlotHurufController : MonoBehaviour
                 GameplaySpellingBee.instance.checkTotal = Mathf.Clamp(GameplaySpellingBee.instance.checkTotal, 0, GameplaySpellingBee.instance.slotHurufController.Length);
             }
 
+            transform.GetChild(1).GetComponent<SpriteRenderer>().color = Color.white;
         }
+
     }
 
 }

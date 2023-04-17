@@ -49,16 +49,16 @@ public class ButtonManager : MonoBehaviour
         }
 
         //---------************************88888
-        if (PlayerPrefs.GetInt("PemilihanBabUI") == 1)
+        if (SaveManager.instance.PemilihanBabUI)
         {
             HomeManager.instance.HomeButton("PilihBab");
-            PlayerPrefs.SetInt("PemilihanBabUI", 0);
+            SaveManager.instance.PemilihanBabUI = false;
         }
     }
     public void PemilihanBabUI()
     {
         PindahScene("Home");
-        PlayerPrefs.SetInt("PemilihanBabUI", 1);
+        SaveManager.instance.PemilihanBabUI = true;
     }
 
     private void Update()

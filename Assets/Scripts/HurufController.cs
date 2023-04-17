@@ -13,6 +13,7 @@ public class HurufController : MonoBehaviour
     public bool use;
     public bool click;
     public bool back;
+    public bool stay;
     public Text hurufText;
     Vector3 mousePosition, savePosisi;
 
@@ -49,7 +50,8 @@ public class HurufController : MonoBehaviour
         {
             GetComponent<BoxCollider>().isTrigger = true;
             GetComponent<Rigidbody>().useGravity = false;
-            transform.position = Vector3.Lerp(transform.position, savePosisi, 5 * Time.deltaTime);
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            transform.position = Vector3.MoveTowards(transform.position, savePosisi, 5 * Time.deltaTime);
 
             if (Vector3.Distance(transform.position, savePosisi) < 0.2f)
             {
@@ -63,6 +65,9 @@ public class HurufController : MonoBehaviour
         CollisionNgestay(1);
         CollisionNgestay(2);
         CollisionNgestay(3);
+        CollisionNgestay(4);
+        CollisionNgestay(5);
+        CollisionNgestay(6);
 
     }
 
@@ -92,6 +97,16 @@ public class HurufController : MonoBehaviour
         if (!hurufAktif || GameplaySpellingBee.instance.finis) return;
 
         click = false;
+
+
+        StartCoroutine(Coroutine());
+        IEnumerator Coroutine()
+        {
+            yield return new WaitForSeconds(0.1f);
+            if (stay) use = true;
+            else use = false;
+        }
+
     }
 
     float timeForce;
@@ -143,11 +158,7 @@ public class HurufController : MonoBehaviour
         }
         */
 
-        //Set huruf lainnya
-        if (collision.collider.GetComponent<HurufController>())
-        {
 
-        }
     }
     private void OnCollisionExit(Collision collision)
     {
@@ -176,16 +187,48 @@ public class HurufController : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.GetComponent<SlotHurufController>())
+        {
+            stay = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<SlotHurufController>())
+        {
+            stay = false;
+            use = false;
+        }
+    }
+
+    /*
+    private void ontriggerstay(collider other)
+    {
+        //set huruf lainnya
+        if (other.getcomponent<slothurufcontroller>())
+        {
+            print("lagi stay " + gameobject.name);
+        }
+        else
+        {
+            print("lagi gak stay " + gameobject.name);
+            use = false;
+        }
+    }
+    */
+
     void CollisionNgestay(int number)
     {
         if (hurufLain[number] != null)
         {
-            if (Vector3.Distance(transform.position, hurufLain[number].position) < dist)
+            if (Vector3.Distance(transform.position, hurufLain[number].position) <= dist)
             {
                 timeForce += Time.deltaTime;
                 if (timeForce > 1)
                 {
-                    GetComponent<Rigidbody>().velocity = new Vector3(Random.Range(-3, 4), 7, 0);
+                    GetComponent<Rigidbody>().velocity = new Vector3(Random.Range(-3, 4), 4, 0);
 
                     GetComponent<BoxCollider>().isTrigger = true;
 

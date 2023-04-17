@@ -53,7 +53,7 @@ public class GameplaySpellingBee : MonoBehaviour
     float resetTime;
     private void Update()
     {
-        if (resetTime < 2)
+        if (resetTime < 1)
         {
             resetTime += Time.deltaTime;
         }
@@ -135,7 +135,7 @@ public class GameplaySpellingBee : MonoBehaviour
             }
 
             //Semua slot keisi
-            if (slotHurufController.Length == checkTotal && resetTime >= 2)
+            if (slotHurufController.Length == checkTotal && resetTime >= 1)
             {
                 resetTime = 0;
 
@@ -173,6 +173,11 @@ public class GameplaySpellingBee : MonoBehaviour
                         for (int i = 0; i < slotHurufController.Length; i++)
                         {
                             slotHurufController[i].gameObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>().isTrigger = false;
+                        }
+                        yield return new WaitForSeconds(0.5f);
+                        for (int i = 0; i < hurufController.Length; i++)
+                        {
+                            hurufController[i].use = false;
                         }
                     }
 

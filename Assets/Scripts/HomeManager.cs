@@ -39,6 +39,8 @@ public class HomeManager : MonoBehaviour
         else if (namaButton == "NewGame") newGameButton.SetActive(true);
         else if (namaButton == "LoadGame") loadGameButton.SetActive(true);
         else if (namaButton == "PilihBab") pilihBabButton.SetActive(true);
+
+        AudioManager.instance.SfxClickBS();
     }
 
     public void InputNama(string input)
@@ -62,6 +64,8 @@ public class HomeManager : MonoBehaviour
         if (inaImage != null) inaImage.color = Color.white;
 
         karakter = "Cowok";
+
+        AudioManager.instance.SfxClickBS();
     }
     public void InputIna(Image image)
     {
@@ -70,6 +74,8 @@ public class HomeManager : MonoBehaviour
         if (kidoImage != null) kidoImage.color = Color.white;
 
         karakter = "Cewek";
+
+        AudioManager.instance.SfxClickBS();
     }
 
     //Pembuatan akun / profil baru
@@ -169,6 +175,7 @@ public class HomeManager : MonoBehaviour
             loadBabContent.transform.GetChild(i).GetComponent<LoadDataBab>().LoadBabText();
         }
 
+        AudioManager.instance.SfxClickBS();
     }
 
     //Ngereset text field
@@ -194,6 +201,8 @@ public class HomeManager : MonoBehaviour
         SaveManager.instance.GameSave.SaveBab(Bab);
 
         ButtonManager.instance.PindahSceneDelay("MetaGame", 2);
+
+        AudioManager.instance.SfxClickBS();
     }
 
 }

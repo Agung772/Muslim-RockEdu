@@ -76,5 +76,7 @@ public class ScrollLerp : MonoBehaviour
         }
 
         totalHalamanText.text = (nomorChild + 1) + " / " + transform.childCount;
+
+        AudioManager.instance.SfxClickBS();
     }
 }

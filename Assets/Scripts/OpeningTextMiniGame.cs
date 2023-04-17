@@ -100,6 +100,8 @@ public class OpeningTextMiniGame : MonoBehaviour
     {
         if (Input.anyKeyDown && clickTextKedua)
         {
+            AudioManager.instance.SfxClickBS();
+
             if (miniGame == "PG")
             {
                 if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
