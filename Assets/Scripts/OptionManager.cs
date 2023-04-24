@@ -10,10 +10,14 @@ public class OptionManager : MonoBehaviour
 
     public Slider sliderBgm;
     public Slider sliderSfx;
+
+    public Dropdown grafikDropdown;
     private void Start()
     {
         RefrensBgm(sliderBgm);
         RefrensSfx(sliderSfx);
+
+        grafikDropdown.value = QualitySettings.GetQualityLevel();
     }
     public void RestartUI()
     {
@@ -77,7 +81,10 @@ public class OptionManager : MonoBehaviour
     {
         AudioManager.instance.RefrensSfx(slider);
     }
-
+    public void SetGrafik(int value)
+    {
+        QualitySettings.SetQualityLevel(value);
+    }
     public void BgmTester() { if (gameObject.activeInHierarchy) AudioManager.instance.BgmTester(); }
     public void SfxTester() { if (gameObject.activeInHierarchy) AudioManager.instance.SfxTester(); }
 

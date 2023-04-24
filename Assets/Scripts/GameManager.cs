@@ -109,4 +109,6 @@ public class GameManager : MonoBehaviour
             PlayerControllerMGPF.instance.clickUI = true;
         }
     }
+
+
 }
