@@ -6,6 +6,7 @@ public class EndDot : MonoBehaviour
 {
     public bool berwarnaDiawal;
     public bool tidakDiAcak;
+    public bool animasiTutup;
 
     public string codeDot;
     public int perluBerapaLine = 1;
@@ -36,8 +37,11 @@ public class EndDot : MonoBehaviour
             {
                 boxColor.sprite = boxColorClear;
             }
-
-            animasiTutupKotak.SetActive(true);
+            if (animasiTutup)
+            {
+                animasiTutupKotak.SetActive(true);
+            }
+           
 
         }
 
