@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +12,7 @@ public class OptionManager : MonoBehaviour
     public Slider sliderBgm;
     public Slider sliderSfx;
 
-    public Dropdown grafikDropdown;
+    public TMP_Dropdown grafikDropdown;
     private void Start()
     {
         RefrensBgm(sliderBgm);
