@@ -19,17 +19,17 @@ public class AnimasiButton : MonoBehaviour
         {
             start = true;
 
-            minX = rectTransform.sizeDelta.x;
-            maxX = rectTransform.sizeDelta.x * 1.2f;
+            minX = rectTransform.localScale.x;
+            maxX = rectTransform.localScale.x * 1.15f;
 
-            minY = rectTransform.sizeDelta.y;
-            maxY = rectTransform.sizeDelta.y * 1.2f;
+            minY = rectTransform.localScale.y;
+            maxY = rectTransform.localScale.y * 1.15f;
         }
 
-        rectTransform.sizeDelta = new Vector2(maxX, maxY);
+        rectTransform.localScale = new Vector2(maxX, maxY);
     }
     public void PointerUp()
     {
-        rectTransform.sizeDelta = new Vector2(minX, minY);
+        rectTransform.localScale = new Vector2(minX, minY);
     }
 }
