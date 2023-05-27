@@ -24,8 +24,8 @@ public class SafeAreaDisplay : MonoBehaviour
         if (panelSafeArea == null)
             return;
         Rect safearea = Screen.safeArea;
-        Vector3 anchorMin = safearea.position;
-        Vector3 anchorMax = safearea.position - safearea.size;
+        Vector2 anchorMin = safearea.position;
+        Vector2 anchorMax = safearea.position - safearea.size;
 
         anchorMin.x /= canvas.pixelRect.width;
         anchorMin.y /= canvas.pixelRect.height;
