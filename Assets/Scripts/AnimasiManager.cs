@@ -10,7 +10,7 @@ public class AnimasiManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null) instance = this;
     }
 
     public void AnimasiScreenCTD(bool condition)

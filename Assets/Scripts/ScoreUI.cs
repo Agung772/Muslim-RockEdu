@@ -44,22 +44,22 @@ public class ScoreUI : MonoBehaviour
         //Audio
         if (jumlahBintang != 0) 
         { 
-            if (GameManager.instance.namaScene.ToString() == "ConnectingTheDot")
+            if (StartScene.instance.namaScene.ToString() == "ConnectingTheDot")
             {
                 AudioManager.instance.SfxScore();
                 AudioManager.instance.SfxConfettiSB();
             }
-            else if (GameManager.instance.namaScene.ToString() == "SpellingBee")
+            else if (StartScene.instance.namaScene.ToString() == "SpellingBee")
             {
                 AudioManager.instance.SfxScoreSB();
                 AudioManager.instance.SfxConfettiSB();
             }
-            else if (GameManager.instance.namaScene.ToString() == "PilihanGanda")
+            else if (StartScene.instance.namaScene.ToString() == "PilihanGanda")
             {
                 AudioManager.instance.SfxScorePG();
                 AudioManager.instance.SfxConfettiPG();
             }
-            else if (GameManager.instance.namaScene.ToString() == "BenarSalah")
+            else if (StartScene.instance.namaScene.ToString() == "BenarSalah")
             {
                 AudioManager.instance.SfxScoreBS();
                 AudioManager.instance.SfxConfettiBS();

@@ -22,7 +22,8 @@ public class AudioManager : MonoBehaviour
     string StartSaveVolume = "StartSaveVolume";
     private void Awake()
     {
-        instance = this;
+        if (instance == null) instance = this;
+
 
         //Set volume untuk pertama kali
         if (PlayerPrefs.GetFloat(StartSaveVolume) == 0)

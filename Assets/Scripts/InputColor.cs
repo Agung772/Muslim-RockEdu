@@ -10,6 +10,6 @@ public class InputColor : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null) instance = this;
     }
 }

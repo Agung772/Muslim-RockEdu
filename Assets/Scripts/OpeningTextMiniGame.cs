@@ -104,10 +104,10 @@ public class OpeningTextMiniGame : MonoBehaviour
 
             if (miniGame == "PG")
             {
-                if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
-                {
-                    AnimasiManager.instance.AnimasiScreenCTD(false);
-                }
+                //if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
+                //{
+                //    AnimasiManager.instance.AnimasiScreenCTD(false);
+                //}
                 gameObject.SetActive(false);
                 buttonGameplayPG.SetActive(true);
                 GameplayPilihanGanda.instance.StartAwalPG();

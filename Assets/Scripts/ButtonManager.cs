@@ -19,8 +19,8 @@ public class ButtonManager : MonoBehaviour
 
     private void Start()
     {
-        nextPertanyaanPG.interactable = false;
-        nextPertanyaanBS.interactable = false;
+        if (nextPertanyaanPG != null) nextPertanyaanPG.interactable = false;
+        if (nextPertanyaanBS != null) nextPertanyaanBS.interactable = false;
 
 
 
