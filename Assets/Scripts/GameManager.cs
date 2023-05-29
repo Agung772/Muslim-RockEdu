@@ -40,41 +40,50 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject loadingScreenUI;
     [SerializeField] Image loadingBar;
+
+    bool cdPindahScene;
     public void PindahScene(string namaScene)
     {
-        StartCoroutine(SceneCoroutine());
-        IEnumerator SceneCoroutine()
+        if (!cdPindahScene)
         {
-            print("PindahScene");
-            loadingScreenUI.SetActive(true);
-            loadingScreenUI.GetComponent<Animator>().SetTrigger("Start");
+            cdPindahScene = true;
 
-            loadingBar.fillAmount = 0;
-
-            yield return new WaitForSeconds(2);
-
-            var loadScene = SceneManager.LoadSceneAsync(namaScene);
-            loadScene.allowSceneActivation = false;
-
-            while (!loadScene.isDone)
+            StartCoroutine(SceneCoroutine());
+            IEnumerator SceneCoroutine()
             {
-                float loading = loadScene.progress / 0.9f;
-                loadingBar.fillAmount = loading;
+                print("PindahScene");
+                loadingScreenUI.SetActive(true);
+                loadingScreenUI.GetComponent<Animator>().SetTrigger("Start");
 
-                if (loading >= 1)
+                loadingBar.fillAmount = 0;
+
+                yield return new WaitForSeconds(2);
+
+                var loadScene = SceneManager.LoadSceneAsync(namaScene);
+                loadScene.allowSceneActivation = false;
+
+
+                while (!loadScene.isDone)
                 {
-                    yield return new WaitForSeconds(0.5f);
-                    loadScene.allowSceneActivation = true;
-                    yield return new WaitForSeconds(1);
-                    loadingScreenUI.GetComponent<Animator>().SetTrigger("Exit");
-                    yield return new WaitForSeconds(1);
-                    loadingScreenUI.SetActive(false);
-                    print("Selesai pindah scene");
+                    float loading = loadScene.progress / 0.9f;
+                    loadingBar.fillAmount = loading;
 
+                    if (loading >= 1)
+                    {
+                        loadScene.allowSceneActivation = true;
+                        yield return new WaitForSeconds(1);
+                        loadingScreenUI.GetComponent<Animator>().SetTrigger("Exit");
+                        yield return new WaitForSeconds(1);
+                        loadingScreenUI.SetActive(false);
+                        cdPindahScene = false;
+                        print("Selesai pindah scene");
+
+                    }
+                    yield return null;
                 }
-                yield return null;
             }
         }
+
     }
     public void PindahSceneDelay(string namaScene, float delay)
     {

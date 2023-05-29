@@ -11,10 +11,12 @@ public class NextPertanyaan : MonoBehaviour
         if (PG)
         {
             ButtonManager.instance.nextPertanyaanPG = GetComponent<Button>();
+            GetComponent<Button>().onClick.AddListener(ButtonManager.instance.NextPertanyaanPilihanGanda);
         }
         else if (BS)
         {
             ButtonManager.instance.nextPertanyaanBS = GetComponent<Button>();
+            GetComponent<Button>().onClick.AddListener(ButtonManager.instance.NextPertanyaanBenarSalah);
         }
 
     }

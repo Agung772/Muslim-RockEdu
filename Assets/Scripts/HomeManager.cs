@@ -200,7 +200,7 @@ public class HomeManager : MonoBehaviour
     {
         SaveManager.instance.GameSave.SaveBab(Bab);
 
-        ButtonManager.instance.PindahSceneDelay("MetaGame", 2);
+        GameManager.instance.PindahScene("MetaGame");
 
         AudioManager.instance.SfxClickBS();
     }

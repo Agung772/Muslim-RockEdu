@@ -889,8 +889,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 268023799}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1740419928}
+        m_TargetAssemblyTypeName: StartScene, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -899,18 +899,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: MetaGame
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 793905743}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: SfxClickBS
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &261694610
@@ -2427,21 +2415,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1077073105}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: PindahScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: MetaGame
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 793905743}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: SfxClickBS
+      - m_Target: {fileID: 1740419928}
+        m_TargetAssemblyTypeName: StartScene, Assembly-CSharp
+        m_MethodName: SceneMetagame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3035,12 +3011,36 @@ PrefabInstance:
       value: 404
       objectReference: {fileID: 0}
     - target: {fileID: 4883409430798411998, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883409430798411998, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883409430798411998, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 268023799}
+      objectReference: {fileID: 1740419928}
+    - target: {fileID: 4883409430798411998, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4883409430798411998, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PindahScene
+      value: SceneMetagame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883409430798411998, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StartScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883409430798411998, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883409430798411998, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5299078645766046735, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
       propertyPath: m_Sprite
@@ -3151,20 +3151,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 763799581c61b344ba9d405c5dbe5b3d, type: 3}
     - target: {fileID: 8592490371593200993, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592490371593200993, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8592490371593200993, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 268023799}
+      objectReference: {fileID: 1740419928}
+    - target: {fileID: 8592490371593200993, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8592490371593200993, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 8592490371593200993, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonManager, Assembly-CSharp
+      value: StartScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592490371593200993, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8931175499303437129, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3286,17 +3298,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7346170676731811462, guid: 9dbf8583331171b4eadfc65c4ee47ef9, type: 3}
   m_PrefabInstance: {fileID: 764762002}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &793905743 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 62966261, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-  m_PrefabInstance: {fileID: 268023798}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbae7f0d8449aa242b5ebf4e56762319, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &832893115
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,17 +4279,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075455986}
   m_CullTransparentMesh: 1
---- !u!114 &1077073105 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7856856832089240234, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-  m_PrefabInstance: {fileID: 268023798}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da2c51e96d081f74d934ef1ed85cc427, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1098873467
 GameObject:
   m_ObjectHideFlags: 0
@@ -7243,19 +7233,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2089176206}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 268023799}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: NextPertanyaanPilihanGanda
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2089176206
 MonoBehaviour:
   m_ObjectHideFlags: 0

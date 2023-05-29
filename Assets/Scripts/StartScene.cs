@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StartScene : MonoBehaviour
 {
@@ -64,5 +65,22 @@ public class StartScene : MonoBehaviour
         //-------------------------------------------------
         if (scoreUI != null) ButtonManager.instance.scoreUI = scoreUI;
 
+        //-------------------------------------------------
+
+
+    }
+
+    public void SceneMetagame()
+    {
+        GameManager.instance.PindahScene("MetaGame");
+
+        AudioManager.instance.SfxClickBS();
+    }
+
+    public void RestartGame()
+    {
+        GameManager.instance.PindahScene(namaScene.ToString());
+
+        AudioManager.instance.SfxClickBS();
     }
 }
