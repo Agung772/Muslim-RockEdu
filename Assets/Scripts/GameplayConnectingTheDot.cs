@@ -17,7 +17,7 @@ public class GameplayConnectingTheDot : MonoBehaviour
     public DotController[] dotController;
     public EndDot[] endDot;
 
-
+    public Animator animatorScreenCDT;
     private void Awake()
     {
         instance = this;
@@ -97,7 +97,7 @@ public class GameplayConnectingTheDot : MonoBehaviour
         {
             //Save score
             SaveManager.instance.GameSave.SaveScoreMiniGame(SaveManager.instance.GameSave._ScoreConnectingTheDot, batrai);
-            AnimasiManager.instance.AnimasiScreenCTD(false);
+            animatorScreenCDT.SetTrigger("Close");
 
 
             StartCoroutine(Coroutine());

@@ -115,6 +115,8 @@ public class ButtonManager : MonoBehaviour
             nextPertanyaanBenarSalah = false;
             nextPertanyaanBS.interactable = false;
             GameplayBenarSalah.instance.NextPertanyaan(3);
+
+            AudioManager.instance.SfxClickPG();
         }
 
     }

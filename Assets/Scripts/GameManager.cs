@@ -38,10 +38,10 @@ public class GameManager : MonoBehaviour
         notifTextUI.transform.GetChild(1).gameObject.GetComponent<Text>().text = text;
     }
 
-    [SerializeField] GameObject loadingScreenUI;
+    public GameObject loadingScreenUI;
     [SerializeField] Image loadingBar;
 
-    bool cdPindahScene;
+    public bool cdPindahScene;
     public void PindahScene(string namaScene)
     {
         if (!cdPindahScene)
@@ -71,13 +71,6 @@ public class GameManager : MonoBehaviour
                     if (loading >= 1)
                     {
                         loadScene.allowSceneActivation = true;
-                        yield return new WaitForSeconds(1);
-                        loadingScreenUI.GetComponent<Animator>().SetTrigger("Exit");
-                        yield return new WaitForSeconds(1);
-                        loadingScreenUI.SetActive(false);
-                        cdPindahScene = false;
-                        print("Selesai pindah scene");
-
                     }
                     yield return null;
                 }

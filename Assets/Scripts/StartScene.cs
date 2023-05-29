@@ -20,6 +20,7 @@ public class StartScene : MonoBehaviour
     public OpeningTextMiniGame openingTextMiniGame;
     public GameObject scoreUI;
 
+    public GameObject popUpAkhir;
     private void Awake()
     {
         instance = this;
@@ -27,6 +28,23 @@ public class StartScene : MonoBehaviour
 
     private void Start()
     {
+        if (GameManager.instance.loadingScreenUI.activeInHierarchy)
+        {
+            StartCoroutine(Coroutine());
+            IEnumerator Coroutine()
+            {
+                GameManager.instance.loadingScreenUI.GetComponent<Animator>().SetTrigger("Exit");
+                yield return new WaitForSeconds(1);
+                GameManager.instance.loadingScreenUI.SetActive(false);
+                GameManager.instance.cdPindahScene = false;
+                print("Selesai pindah scene");
+            }
+        }
+
+
+
+
+
         if (namaScene == NamaScene.ConnectingTheDot)
         {
             openingTextMiniGame.gameObject.SetActive(true);
@@ -67,6 +85,15 @@ public class StartScene : MonoBehaviour
 
         //-------------------------------------------------
 
+        if (SaveManager.instance.GameSave.scoreBenarSalah >= 2 &&
+            SaveManager.instance.GameSave.scoreConnectingTheDot >= 2 &&
+            SaveManager.instance.GameSave.scorePilihanGanda >= 2 &&
+            SaveManager.instance.GameSave.scoreSpellingBee >= 2 &&
+            popUpAkhir != null)
+        {
+            popUpAkhir.SetActive(true);
+            PlayerControllerMGPF.instance.clickUI = true;
+        }
 
     }
 
@@ -81,6 +108,11 @@ public class StartScene : MonoBehaviour
     {
         GameManager.instance.PindahScene(namaScene.ToString());
 
+        AudioManager.instance.SfxClickBS();
+    }
+
+    public void SFXClick()
+    {
         AudioManager.instance.SfxClickBS();
     }
 }
