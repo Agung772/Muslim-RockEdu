@@ -1971,6 +1971,7 @@ MonoBehaviour:
   namaScene: 1
   openingTextMiniGame: {fileID: 0}
   scoreUI: {fileID: 0}
+  popUpAkhir: {fileID: 851427940}
 --- !u!4 &124949718
 Transform:
   m_ObjectHideFlags: 0
