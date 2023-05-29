@@ -396,6 +396,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1078413313}
+          m_TargetAssemblyTypeName: MetagameUI, Assembly-CSharp
+          m_MethodName: UIClick
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &30861167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2760,7 +2776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 541683650243444191, guid: cc48b2418488eb3449facede281cf427, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 541683650243444191, guid: cc48b2418488eb3449facede281cf427, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3407,7 +3423,7 @@ Transform:
   - {fileID: 1395238870}
   - {fileID: 609560716}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &245760078
 GameObject:
@@ -10720,7 +10736,7 @@ Transform:
   m_Children:
   - {fileID: 5856891}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &514539112
 PrefabInstance:
@@ -10937,7 +10953,7 @@ GameObject:
   - component: {fileID: 530073369}
   - component: {fileID: 530073368}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CanvasMetagame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11002,7 +11018,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &530073371
 RectTransform:
@@ -11017,7 +11033,7 @@ RectTransform:
   m_Children:
   - {fileID: 1810358701}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -25672,6 +25688,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212a4c482b7105d4285d05012090419d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  namaPlayer: {fileID: 1233454382}
+  kelas: {fileID: 1859801676}
+  bab: {fileID: 1189034905}
+  cowokUI: {fileID: 766961160}
+  cewekUI: {fileID: 869972303}
   DU: {fileID: 1835079466}
   RK: {fileID: 1648750373}
   RM: {fileID: 2134382123}
@@ -28016,7 +28037,7 @@ Transform:
   m_Children:
   - {fileID: 1200002077}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1269457913
 GameObject:
@@ -28528,7 +28549,7 @@ Transform:
   - {fileID: 778154843}
   - {fileID: 2101231595}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1356078905
 PrefabInstance:
@@ -29623,7 +29644,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1446724247
 PrefabInstance:
@@ -29844,7 +29865,7 @@ Transform:
   - {fileID: 2037843735}
   - {fileID: 1980938683}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1480466150
 PrefabInstance:
@@ -33076,9 +33097,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: ClickUI
+        - m_Target: {fileID: 1078413313}
+          m_TargetAssemblyTypeName: MetagameUI, Assembly-CSharp
+          m_MethodName: UIClick
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -33867,7 +33888,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 45, y: -135, z: 0}
 --- !u!114 &1812720463
 MonoBehaviour:
@@ -34594,9 +34615,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: ClickUI
+        - m_Target: {fileID: 1078413313}
+          m_TargetAssemblyTypeName: MetagameUI, Assembly-CSharp
+          m_MethodName: UIClick
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -35156,6 +35177,22 @@ MonoBehaviour:
         - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: ClickUI
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1078413313}
+          m_TargetAssemblyTypeName: MetagameUI, Assembly-CSharp
+          m_MethodName: UIClick
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -37744,9 +37781,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: ClickUI
+        - m_Target: {fileID: 1078413313}
+          m_TargetAssemblyTypeName: MetagameUI, Assembly-CSharp
+          m_MethodName: UIClick
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -39646,7 +39683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ea803b2be2acc46978a3eb9a761ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popUpAkhirUI: {fileID: 1852786006002721726}
+  popUpAkhirUI: {fileID: 851427940}
 --- !u!4 &2130059654
 Transform:
   m_ObjectHideFlags: 0
@@ -39659,7 +39696,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2130529337
 PrefabInstance:
@@ -43414,6 +43451,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 516406848, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: bab
+      value: 
+      objectReference: {fileID: 1189034905}
+    - target: {fileID: 516406848, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: kelas
+      value: 
+      objectReference: {fileID: 1859801676}
+    - target: {fileID: 516406848, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: cewekUI
+      value: 
+      objectReference: {fileID: 869972303}
+    - target: {fileID: 516406848, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: cowokUI
+      value: 
+      objectReference: {fileID: 766961160}
+    - target: {fileID: 516406848, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: namaPlayer
+      value: 
+      objectReference: {fileID: 1233454382}
     - target: {fileID: 27334341496692424, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -43816,11 +43873,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
---- !u!1 &1852786006002721726 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7070277537639762708, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-  m_PrefabInstance: {fileID: 1852786006002721725}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1898001179027770283
 Transform:
   m_ObjectHideFlags: 0

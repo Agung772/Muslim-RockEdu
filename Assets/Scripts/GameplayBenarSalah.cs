@@ -171,6 +171,7 @@ public class GameplayBenarSalah : MonoBehaviour
     {
         if (hasil == "Benar")
         {
+            transisiNext.gameObject.SetActive(true);
             transisiNext.SetTrigger("Benar");
 
             StartCoroutine(CoroutineA());

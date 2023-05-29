@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,7 +26,16 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
 
 
     }
@@ -74,13 +84,40 @@ public class GameManager : MonoBehaviour
         notifTextUI.SetActive(true);
         notifTextUI.transform.GetChild(1).gameObject.GetComponent<Text>().text = text;
     }
+
+    [SerializeField] GameObject loadingScreenUI;
+    [SerializeField] Image loadingBar;
     public void PindahScene(string namaScene)
     {
-        StartCoroutine(Coroutine());
-        IEnumerator Coroutine()
+        StartCoroutine(SceneCoroutine());
+        IEnumerator SceneCoroutine()
         {
-            yield return new WaitForSeconds(1);
-            SceneManager.LoadScene(namaScene);
+            print("PindahScene");
+            loadingScreenUI.SetActive(true);
+            loadingScreenUI.GetComponent<Animator>().SetTrigger("Start");
+
+            loadingBar.fillAmount = 0;
+
+            yield return new WaitForSeconds(2);
+
+            var loadScene = SceneManager.LoadSceneAsync(namaScene);
+            loadScene.allowSceneActivation = false;
+
+            while (!loadScene.isDone)
+            {
+                float loading = loadScene.progress / 0.9f;
+                loadingBar.fillAmount = loading;
+
+                if (loading >= 1)
+                {
+                    yield return new WaitForSeconds(2);
+                    loadScene.allowSceneActivation = true;
+                    loadingScreenUI.GetComponent<Animator>().SetTrigger("Exit");
+                    print("Selesai pindah scene");
+
+                }
+                yield return null;
+            }
         }
     }
     public void PindahSceneDelay(string namaScene, float delay)

@@ -1,9 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MetagameUI : MonoBehaviour
 {
+    public TextMeshProUGUI namaPlayer;
+    public TextMeshProUGUI kelas;
+    public TextMeshProUGUI bab;
+
+    public GameObject
+        cowokUI,
+        cewekUI;
     public GameObject
         DU,
         RK,
@@ -11,6 +19,22 @@ public class MetagameUI : MonoBehaviour
         RP;
     private void Start()
     {
+        namaPlayer.text = SaveManager.instance.GameSave.namaPlayer;
+        kelas.text = SaveManager.instance.GameSave.kelas;
+        bab.text = "Bab : " + SaveManager.instance.GameSave.bab;
+
+        if (SaveManager.instance.GameSave.karakter == "Cowok")
+        {
+            cowokUI.SetActive(true);
+            cewekUI.SetActive(false);
+        }
+        else
+        {
+            cowokUI.SetActive(false);
+            cewekUI.SetActive(true);
+        }
+
+        //------------------------
         var GS = SaveManager.instance.GameSave;
 
         int scoreCTD = GS.scoreConnectingTheDot;
@@ -34,5 +58,10 @@ public class MetagameUI : MonoBehaviour
         {
             DU.gameObject.SetActive(false);
         }
+    }
+
+    public void UIClick(bool value)
+    {
+        PlayerControllerMGPF.instance.clickUI = value;
     }
 }

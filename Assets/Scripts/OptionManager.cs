@@ -18,7 +18,11 @@ public class OptionManager : MonoBehaviour
         RefrensBgm(sliderBgm);
         RefrensSfx(sliderSfx);
 
-        grafikDropdown.value = QualitySettings.GetQualityLevel();
+        if (grafikDropdown != null)
+        {
+            grafikDropdown.value = QualitySettings.GetQualityLevel();
+        }
+
     }
     public void RestartUI()
     {

@@ -23,7 +23,7 @@ public class ButtonInteract : MonoBehaviour
         //Save posisi player
         SaveManager.instance.GameSave.SavePosisiPlayer(playerMetaGame.transform.position);
 
-        SceneManager.LoadScene(NamaScene);
+        GameManager.instance.PindahScene(NamaScene);
     }
 
     public void SceneMiniGame(string namaScene)

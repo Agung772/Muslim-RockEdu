@@ -12,17 +12,6 @@ public class ButtonManager : MonoBehaviour
 
     public GameObject settingHomeUI;
 
-    [Space]
-    [Space]
-    public TextMeshProUGUI namaPlayer;
-    public TextMeshProUGUI kelas;
-    public TextMeshProUGUI bab;
-
-    public GameObject
-        cowokUI,
-        cewekUI;
-
-
     private void Awake()
     {
         instance = this;
@@ -30,25 +19,12 @@ public class ButtonManager : MonoBehaviour
 
     private void Start()
     {
-        namaPlayer.text = SaveManager.instance.GameSave.namaPlayer;
-        kelas.text = SaveManager.instance.GameSave.kelas;
-        bab.text = "Bab : " + SaveManager.instance.GameSave.bab;
-
         nextPertanyaanPG.interactable = false;
         nextPertanyaanBS.interactable = false;
 
-        if (SaveManager.instance.GameSave.karakter == "Cowok")
-        {
-            cowokUI.SetActive(true);
-            cewekUI.SetActive(false);
-        }
-        else
-        {
-            cowokUI.SetActive(false);
-            cewekUI.SetActive(true);
-        }
 
-        //---------************************88888
+
+        //--------------------------------------------------
         if (SaveManager.instance.PemilihanBabUI)
         {
             HomeManager.instance.HomeButton("PilihBab");
