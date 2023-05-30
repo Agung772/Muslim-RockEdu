@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
+    //
+    public float Test_Bug;
+    //
+
     public static AudioManager instance;
  
     public float volumeAudioBgm;
