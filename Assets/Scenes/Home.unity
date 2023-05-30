@@ -1585,6 +1585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BabButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
+      propertyPath: namaBab
+      value: Cinta Al-Quran
+      objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1603,7 +1607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1611,7 +1615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1651,11 +1655,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2269,7 +2273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: namaBab
-      value: ROCKET Nabi & Rasul
+      value: Nabi & Rasul
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
@@ -2289,7 +2293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2297,7 +2301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2337,11 +2341,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3966,7 +3970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: namaBab
-      value: ROCKET Rukun Islam
+      value: Rukun Islam
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
@@ -3986,7 +3990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -3994,7 +3998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4034,11 +4038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1560
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5704,7 +5708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -583, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 75}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &633712270
@@ -6195,7 +6199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: namaBab
-      value: ROCKET Al-Quran Petunjuk hidup
+      value: Al-Quran Petunjuk hidup
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
@@ -6215,7 +6219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -6223,7 +6227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6263,11 +6267,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8911,7 +8915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: namaBab
-      value: ROCKET Sayang semua ciptaan Allah
+      value: Sayang semua ciptaan Allah
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
@@ -8931,7 +8935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -8939,7 +8943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -8979,11 +8983,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2895
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9065,7 +9069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: namaBab
-      value: ROCKET Nabi Adam
+      value: Nabi Adam
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
@@ -9085,7 +9089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -9093,7 +9097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -9133,11 +9137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 4230
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9832,7 +9836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1088118472
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10151,9 +10155,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -10.380676}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 3}
 --- !u!114 &1115932718
 MonoBehaviour:
@@ -10314,7 +10318,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.3487901, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11046,7 +11050,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2862.0674, y: 533}
+  m_SizeDelta: {x: 0, y: 533}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1202275194
 GameObject:
@@ -11868,7 +11872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: namaBab
-      value: ROCKET Hidup Bersih
+      value: Hidup Bersih
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
@@ -11888,7 +11892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -11896,7 +11900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -11936,11 +11940,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3785
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -20575,7 +20579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: namaBab
-      value: ROCKET Terimakasih&Disiplin
+      value: Terimakasih&Disiplin
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
@@ -20595,7 +20599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -20603,7 +20607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -20643,11 +20647,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3340
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -23267,7 +23271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: namaBab
-      value: ROCKET Rukun Iman
+      value: Rukun Iman
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
@@ -23287,7 +23291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -23295,7 +23299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -23335,11 +23339,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 670
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -24270,7 +24274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675598174475886944, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: namaBab
-      value: ROCKET Basmallah&Hamdalah
+      value: Basmallah&Hamdalah
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_Pivot.x
@@ -24290,7 +24294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.x
@@ -24298,7 +24302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -24338,11 +24342,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1115
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678477335973740087, guid: b4f2df7f1b6d2f54abebaf86401f1c1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
