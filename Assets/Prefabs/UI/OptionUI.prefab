@@ -3568,7 +3568,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.0001, y: -5.128}
-  m_SizeDelta: {x: 1932.3893, y: 1094.8234}
+  m_SizeDelta: {x: 2200, y: 1200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1972028132743332860
 CanvasRenderer:
@@ -4195,7 +4195,7 @@ MonoBehaviour:
   optionUI: {fileID: 1816088079792560653}
   sliderBgm: {fileID: 2440603148230018033}
   sliderSfx: {fileID: 808384113492939698}
-  grafikDropdown: {fileID: 4207714147326423319}
+  grafikDropdown: {fileID: 0}
 --- !u!1 &8268879201484240431
 GameObject:
   m_ObjectHideFlags: 0
