@@ -50,6 +50,20 @@ public class GameplayPilihanGanda : MonoBehaviour
     //Memunculkan pertanyaan berdasarkan bab
     public void NextPertanyaan(float delay)
     {
+        //Nyari kondisi
+        if (urutanPertanyaan != 0)
+        {
+            if (PilihanGanda.instance.condition == "Benar")
+            {
+                benar++;
+            }
+            else
+            {
+                salah++;
+            }
+        }
+
+
         //Pertanyaan sudah habis 
         //Saving score
         if (urutanPertanyaan == listPertanyaanBab1.Count - 1)

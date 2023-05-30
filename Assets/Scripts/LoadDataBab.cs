@@ -54,25 +54,25 @@ public class LoadDataBab : MonoBehaviour
 
 
         //Unlock level
-        if (bab > 1)
-        {
-            int cTDMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreConnectingTheDot + (bab - 1) + SaveManager.instance.GameSave.codeSave);
-            int sBMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreSpellingBee + (bab - 1) + SaveManager.instance.GameSave.codeSave);
-            int pGMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScorePilihanGanda + (bab - 1) + SaveManager.instance.GameSave.codeSave);
-            int bSMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreBenarSalah + (bab - 1) + SaveManager.instance.GameSave.codeSave);
+        //if (bab > 1)
+        //{
+        //    int cTDMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreConnectingTheDot + (bab - 1) + SaveManager.instance.GameSave.codeSave);
+        //    int sBMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreSpellingBee + (bab - 1) + SaveManager.instance.GameSave.codeSave);
+        //    int pGMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScorePilihanGanda + (bab - 1) + SaveManager.instance.GameSave.codeSave);
+        //    int bSMin1 = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreBenarSalah + (bab - 1) + SaveManager.instance.GameSave.codeSave);
 
-            int totalBintangMin1 = cTDMin1 + sBMin1 + pGMin1 + bSMin1;
+        //    int totalBintangMin1 = cTDMin1 + sBMin1 + pGMin1 + bSMin1;
 
 
-            if (totalBintangMin1 >= 8)
-            {
-                roketButton.interactable = true;
-            }
-            else
-            {
-                roketButton.interactable = false;
-            }
-        }
+        //    if (totalBintangMin1 >= 8)
+        //    {
+        //        roketButton.interactable = true;
+        //    }
+        //    else
+        //    {
+        //        roketButton.interactable = false;
+        //    }
+        //}
 
 
     }

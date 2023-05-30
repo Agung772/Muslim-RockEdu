@@ -55,6 +55,20 @@ public class GameplayBenarSalah : MonoBehaviour
     //Memunculkan pertanyaan berdasarkan bab
     public void NextPertanyaan(int delay)
     {
+        //Mencari condition
+        if (urutanPertanyaan != 0)
+        {
+            if (BenarSalah.instance.condition == "Benar")
+            {
+                benar++;
+            }
+            else
+            {
+                salah++;
+            }
+        }
+
+
         //Pertanyaan sudah habis 
         //Saving score
         if (urutanPertanyaan == jumlahSoal)

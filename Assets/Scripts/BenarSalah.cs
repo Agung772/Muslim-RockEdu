@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class BenarSalah : MonoBehaviour
 {
+    public static BenarSalah instance;
+
     public bool sudahDijawab;
     public string jawabanYangBenar;
     public string condition;
@@ -17,6 +19,7 @@ public class BenarSalah : MonoBehaviour
 
     private IEnumerator Start()
     {
+        instance = this;
 
         benarImage.GetComponent<Button>().interactable = false;
         salahImage.GetComponent<Button>().interactable = false;
@@ -50,25 +53,26 @@ public class BenarSalah : MonoBehaviour
 
             button.GetComponent<ButtonScript>().hasClick = true;
             button.GetComponent<Image>().color = InputColor.instance.biruBS;
+
+            //----------
+            if (button.GetComponent<ButtonScript>().jawaban == jawabanYangBenar)
+            {
+                condition = "Benar";
+            }
+            else
+            {
+                condition = "Salah";
+            }
+
+            //sudahDijawab = true;
+            ButtonManager.instance.nextPertanyaanBenarSalah = true;
+            ButtonManager.instance.nextPertanyaanBS.interactable = true;
         }
 
         //Benar salah jawaban
         else
         {
-            if (button.GetComponent<ButtonScript>().jawaban == jawabanYangBenar)
-            {
-                GameplayBenarSalah.instance.benar++;
-                condition = "Benar";
-            }
-            else
-            {
-                GameplayBenarSalah.instance.salah++;
-                condition = "Salah";
-            }
 
-            sudahDijawab = true;
-            ButtonManager.instance.nextPertanyaanBenarSalah = true;
-            ButtonManager.instance.nextPertanyaanBS.interactable = true;
 
 
             //Next pertanyaan

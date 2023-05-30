@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject loadingScreenUI;
     [SerializeField] Image loadingBar;
+    [SerializeField] LoadingScreen loadingScreen;
 
     public bool cdPindahScene;
     public void PindahScene(string namaScene)
@@ -56,6 +57,8 @@ public class GameManager : MonoBehaviour
                 loadingScreenUI.GetComponent<Animator>().SetTrigger("Start");
 
                 loadingBar.fillAmount = 0;
+                loadingScreen.value = 0;
+                LoadingScreen();
 
                 yield return new WaitForSeconds(2);
 
@@ -68,6 +71,10 @@ public class GameManager : MonoBehaviour
                     float loading = loadScene.progress / 0.9f;
                     loadingBar.fillAmount = loading;
 
+                    loadingScreen.value = loading;
+                    LoadingScreen();
+
+
                     if (loading >= 1)
                     {
                         loadScene.allowSceneActivation = true;
@@ -77,6 +84,30 @@ public class GameManager : MonoBehaviour
             }
         }
 
+    }
+    bool cd;
+    void LoadingScreen()
+    {
+        loadingScreen.jarakPosisi = loadingScreen.posisiAkhir - loadingScreen.posisiAwal;
+        loadingScreen.roket.localPosition = loadingScreen.posisiAwal + loadingScreen.jarakPosisi * loadingScreen.value;
+
+        if (!cd)
+        {
+            cd = true;
+
+            StartCoroutine(Coroutine());
+            IEnumerator Coroutine()
+            {
+                yield return new WaitForSeconds(0.5f);
+                loadingScreen.textLoading.text = "Memuat Roket.";
+                yield return new WaitForSeconds(0.5f);
+                loadingScreen.textLoading.text = "Memuat Roket..";
+                yield return new WaitForSeconds(0.5f);
+                loadingScreen.textLoading.text = "Memuat Roket...";
+                cd = false;
+
+            }
+        }
     }
     public void PindahSceneDelay(string namaScene, float delay)
     {

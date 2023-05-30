@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class PilihanGanda : MonoBehaviour
 {
+    public static PilihanGanda instance;
+
     public bool sudahDijawab;
     public string condition;
     public TextMeshProUGUI soalTextPro;
@@ -16,6 +18,8 @@ public class PilihanGanda : MonoBehaviour
 
     private IEnumerator Start()
     {
+        instance = this;
+
         jawabanImage[0].GetComponent<Button>().interactable = false;
         jawabanImage[1].GetComponent<Button>().interactable = false;
         jawabanImage[2].GetComponent<Button>().interactable = false;
@@ -76,27 +80,25 @@ public class PilihanGanda : MonoBehaviour
 
             button.GetComponent<ButtonScript>().hasClick = true;
             button.GetComponent<Image>().color = InputColor.instance.jinggaPG;
+
+            //----------------
+            if (button.GetComponent<ButtonScript>().jawaban == "A")
+            {
+                condition = "Benar";
+            }
+            else
+            {
+                condition = "Salah";
+            }
+
+            ButtonManager.instance.nextPertanyaanPilihanGanda = true;
+            ButtonManager.instance.nextPertanyaanPG.interactable = true;
         }
 
         //Benar salah jawaban
         else
         {
-            if (button.GetComponent<ButtonScript>().jawaban == "A")
-            {
-                button.GetComponent<Image>().color = InputColor.instance.hijauPG;
-                GameplayPilihanGanda.instance.benar++;
-                condition = "Benar";
-            }
-            else
-            {
-                button.GetComponent<Image>().color = InputColor.instance.merahPG;
-                GameplayPilihanGanda.instance.salah++;
-                condition = "Salah";
-            }
 
-            sudahDijawab = true;
-            ButtonManager.instance.nextPertanyaanPilihanGanda = true;
-            ButtonManager.instance.nextPertanyaanPG.interactable = true;
         }
 
         AudioManager.instance.SfxClickPG();

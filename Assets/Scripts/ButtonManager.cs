@@ -103,6 +103,15 @@ public class ButtonManager : MonoBehaviour
     {
         if (nextPertanyaanBenarSalah)
         {
+            //if (BenarSalah.instance.condition == "Benar")
+            //{
+            //    GameplayBenarSalah.instance.benar++;
+            //}
+            //else
+            //{
+            //    GameplayBenarSalah.instance.salah++;
+            //}
+
             nextPertanyaanBenarSalah = false;
             nextPertanyaanBS.interactable = false;
             GameplayBenarSalah.instance.NextPertanyaan(3);
