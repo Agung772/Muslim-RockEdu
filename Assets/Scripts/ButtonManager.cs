@@ -25,17 +25,8 @@ public class ButtonManager : MonoBehaviour
 
 
         //--------------------------------------------------
-        if (SaveManager.instance.PemilihanBabUI)
-        {
-            HomeManager.instance.HomeButton("PilihBab");
-            SaveManager.instance.PemilihanBabUI = false;
-        }
     }
-    public void PemilihanBabUI()
-    {
-        PindahScene("Home");
-        SaveManager.instance.PemilihanBabUI = true;
-    }
+
 
     private void Update()
     {
