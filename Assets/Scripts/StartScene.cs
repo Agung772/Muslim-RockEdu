@@ -95,6 +95,19 @@ public class StartScene : MonoBehaviour
             PlayerControllerMGPF.instance.clickUI = true;
         }
 
+        //---------------------------------------------
+        if (SaveManager.instance.PemilihanBabUI)
+        {
+            HomeManager.instance.HomeButton("PilihBab");
+            SaveManager.instance.PemilihanBabUI = false;
+        }
+
+    }
+
+    public void PemilihanBabUI()
+    {
+        GameManager.instance.PindahScene("Home");
+        SaveManager.instance.PemilihanBabUI = true;
     }
 
     public void SceneMetagame()
