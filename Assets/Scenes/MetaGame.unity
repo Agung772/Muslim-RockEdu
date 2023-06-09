@@ -316,17 +316,6 @@ Transform:
   m_Father: {fileID: 2037843735}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &25888527 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 516406848, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-  m_PrefabInstance: {fileID: 1852786006002721725}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91367e8483a8a2b409c7e4ac2123c5fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &30861164
 GameObject:
   m_ObjectHideFlags: 0
@@ -11445,8 +11434,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 25888527}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 124949717}
+        m_TargetAssemblyTypeName: StartScene, Assembly-CSharp
         m_MethodName: PindahScene
         m_Mode: 5
         m_Arguments:

@@ -117,6 +117,13 @@ public class StartScene : MonoBehaviour
         AudioManager.instance.SfxClickBS();
     }
 
+    public void PindahScene(string value)
+    {
+        GameManager.instance.PindahScene(value);
+
+        AudioManager.instance.SfxClickBS();
+    }
+
     public void RestartGame()
     {
         GameManager.instance.PindahScene(namaScene.ToString());
